@@ -1,0 +1,164 @@
+/*
+CSS reset
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+
+body{
+  background-image: url(background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  font-family: 'Poppins', sans-serif;
+}
+#wrapper{
+  width: 1000px;
+  margin:auto;
+  text-align: center;
+  height: 450px;
+  margin-top: 50px;
+}
+
+.player-0-label , .player-1-label {
+  background-color: rgba(18, 179, 237, 0.45);
+  width: 50%;
+  float:left;
+  text-align: center;
+  height: 100%;
+  padding-top: 70px;
+}
+.player-0 , .player-1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+.score-0 , .score-1 {
+  font-size: 120px;
+}
+h1 , h2 {
+  background-color: none;
+  font-size: 55px;
+  color: red;
+  font-weight: 800;
+  letter-spacing: 6px;
+  font-family: 'Permanent Marker', cursive;
+}
+h2{
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-top: 550px;
+}
+.active {
+  background-color: rgba(18, 179, 237, 0.92);
+  font-weight: bold;
+}
+.current-box-0 , .current-box-1{
+  background-color: #0C7CA4;
+  width: 70px;
+  height: 50px;
+  margin: auto;
+  padding:20px;
+  border-radius: 10px;
+  border: 2px solid #0A6382;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-top: 80px;
+}
+.player-0-current-score , .player-1-current-score{
+  font-size: 30px;
+}
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: ;
+    background: none;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+button:focus {
+    outline: none;
+}
+button:hover { font-weight: 600; }
+.new-game {
+  top: 170px;
+}
+.roll-dice{
+  top: 490px;
+}
+.hold-dice{
+  top: 530px;
+}
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 288px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(256, 256, 256, 0.70);
+    border: 2px solid #0C7CA4;
+    border-radius: 20px;
+}
+.winner {
+  color: red;
+  font-weight: bold;
+  background-color: yellow;
+  background-color: rgba(245 , 240 , 10 , 0.7);
+}
+.winner .player-0{
+  font-size: 50px;
+}
+.winner .player-1 {
+  font-size: 50px;
+}
+.winner .score-0 {
+  font-size: 170px;
+}
+.winner .score-1{
+  font-size: 170px;
+}
+.input {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 575px;
+  padding: 5px;
+  border: 2px solid #0C7CA4;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #0C7CA4;
+  font-weight: bold;
+}
+.input:focus {
+  outline: none;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Pig Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Pig Game</h1>
+      <div id="player-0-label" class="player-0-label active">
+        <div id="player-0" class="player-0">Player 1</div>
+        <div id="score-0" class="score-0">25</div>
+        <div class="current-box-0">
+          <div>current</div>
+          <div id="current-0" class="player-0-current-score">11</div>
+        </div>
+      </div>
+
+      <div id="player-1-label" class="player-1-label">
+        <div id="player-1" class="player-1">Player 2</div>
+        <div id="score-1" class="score-1">55</div>
+        <div class="current-box-1">
+          <div>current</div>
+          <div id="current-1" class="player-1-current-score">2</div>
+        </div>
+      </div>
+
+      <button class="new-game" id="new-game">New Game</button>
+      <button class="roll-dice" id="roll-dice">Roll Dice</button>
+      <button class="hold-dice" id="hold-dice">Hold Dice</button>
+      <input type="text" class="input" placeholder="final score"></input>
+      <img src="dice-2.png" alt="Dice" class="dice" id="dice"/>
+      <h2>Designed and developed by jereDev</h2>
+    </div>
+    <script src="app.js"></script>
+  </body>
+  </html
